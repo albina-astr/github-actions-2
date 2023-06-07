@@ -6,7 +6,7 @@ import org.junit.Test;
  * @author albina-gima
  * @date 4/5/23
  */
-public class CalculatorTest {sxxsasxlnk
+public class CalculatorTest {
     @Test(expected = IllegalArgumentException.class)
     public void testNullValuesWhileSumShouldThrowException() {
         // when
