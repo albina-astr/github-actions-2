@@ -64,4 +64,10 @@ public class CalculatorTest {
         int result = calculator.divide(10, 2);
         Assert.assertEquals(5, result);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testDivideMustThrowException() {
+        Calculator calculator = new Calculator();
+        calculator.divide(10, 0);
+    }
 }
